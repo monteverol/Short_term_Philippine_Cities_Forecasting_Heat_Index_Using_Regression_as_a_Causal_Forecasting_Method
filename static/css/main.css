@@ -2,7 +2,7 @@
 
 :root {
     --primary: #F2572B;
-    --secondary: #F9ECDE;
+    --secondary: #FED5BE;
     --tertiary: #2B0303;
 }
 
@@ -14,7 +14,10 @@
     font-optical-sizing: auto;
 }
 
+
 /* INDEX.HTML */
+
+
 .intro {
     height: 100vh;
     position: relative;
@@ -97,7 +100,10 @@
     color: var(--tertiary);
 }
 
+
 /* SELECT_CITY.HTML */
+
+
 .select_city {
     height: 100vh;
     display: flex;
@@ -157,7 +163,10 @@
     color: var(--primary)
 }
 
+
 /* PLOTTING.HTML */
+
+
 .plotting {
     height: 100vh;
     display: flex;
@@ -181,13 +190,17 @@
     background-color: #898989;
     padding: 0 2em;
     border-radius: 0.5em;
+    position: relative;
 }
 
 .plotting .plots .title p {
     color: #F3F3F3;
-    font-size: 5em;
+    font-size: 3em;
     font-weight: bold;
     font-family: 'Stardos Stencil', system-ui;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .plotting .plots .image {
@@ -236,5 +249,123 @@
     font-size: 5em;
     font-family: 'Stardos Stencil', system-ui;
     font-weight: bold;
+    color: #FFFFFF;
+}
+
+
+/* PREDICTION.HTML */
+
+
+.prediction {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.prediction .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    background-color: var(--secondary);
+    height: 10%;
+    width: 100%; 
+}
+
+.prediction .header a {
+    text-decoration: none;
+}
+
+.prediction .header p {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--tertiary);
+}
+
+.prediction .body {
+    height: 90%;
+    width: 100%;
+    background-color: var(--primary);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.prediction .body .image {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.prediction .body .date {
+    width: 100%;
+}
+
+.prediction .body .date p {
+    font-size: 5em;
+    font-weight: bold;
+    font-family: 'Notable', sans-serif;
+}
+
+.prediction .body .predicts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    margin-top: 4em;
+}
+
+.prediction .body .predicts .day {
+    width: 13%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.prediction .body .predicts .day .predicted_date {
+    width: 100%;
+    height: 25%;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3D3D3D;
+}
+
+.prediction .body .predicts .day .predicted_date p {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.prediction .body .predicts .day .temperature {
+    height: 70%;
+    width: 100%;
+    background-color: #F9ECDE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5em;
+}
+
+.prediction .body .predicts .day .temperature p {
+    font-family: 'Notable', sans-serif;
+    font-size: 4em;
+    color: #2B0303;
+}
+
+.prediction .body .message {
+    margin-top: 4em;
+}
+
+.prediction .body .message p {
+    font-weight: bold;
+    font-size: 3em;
     color: #FFFFFF;
 }

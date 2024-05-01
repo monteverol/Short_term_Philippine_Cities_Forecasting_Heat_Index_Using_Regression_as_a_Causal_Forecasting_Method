@@ -19,7 +19,13 @@ def city_list():
 
 @app.route('/plotting')
 def plotting():
-    return render_template('plotting.html')
+    city = request.args.get('city')
+    return render_template('plotting.html', city=city)
+
+@app.route('/prediction')
+def prediction():
+    city = request.args.get('city')
+    return render_template('prediction.html', city=city)
 
 if __name__ == '__main__':
     app.run(debug=True)

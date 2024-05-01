@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<main class="prediction">
+    <div class="header">
+        <a href="http://127.0.0.1:5000/"><p>Data Science</p></a>
+        <p>Bandril-Batulan-Cayetano</p>
+        <p>CS32S4</p>
+    </div>
+    <div class="body">
+        <img src="../static/assets/dataResults.png" class="image" />
+        <div class="date">
+            <p>APRIL 23, 2024</p>
+        </div>
+        <div class="predicts">
+            <div class="day">
+                <div class="predicted_date">
+                    <p>April 24</p>
+                </div>
+                <div class="temperature">
+                    <p>23°C</p>
+                </div>
+            </div>
+            <div class="day">
+                <div class="predicted_date">
+                    <p>April 25</p>
+                </div>
+                <div class="temperature">
+                    <p>23°C</p>
+                </div>
+            </div>
+            <div class="day">
+                <div class="predicted_date">
+                    <p>April 26</p>
+                </div>
+                <div class="temperature">
+                    <p>23°C</p>
+                </div>
+            </div>
+            <div class="day">
+                <div class="predicted_date">
+                    <p>April 27</p>
+                </div>
+                <div class="temperature">
+                    <p>23°C</p>
+                </div>
+            </div>
+            <div class="day">
+                <div class="predicted_date">
+                    <p>April 28</p>
+                </div>
+                <div class="temperature">
+                    <p>23°C</p>
+                </div>
+            </div>
+            <div class="day">
+                <div class="predicted_date">
+                    <p>April 29</p>
+                </div>
+                <div class="temperature">
+                    <p>23°C</p>
+                </div>
+            </div>
+            <div class="day">
+                <div class="predicted_date">
+                    <p>April 30</p>
+                </div>
+                <div class="temperature">
+                    <p>23°C</p>
+                </div>
+            </div>
+        </div>
+        <div class="message">
+            <p>
+                These are the predicted heat index for seven days after the selected date in {{ city }} City.
+            </p>
+        </div>
+    </div>
+</main>
+
+{% endblock %}
