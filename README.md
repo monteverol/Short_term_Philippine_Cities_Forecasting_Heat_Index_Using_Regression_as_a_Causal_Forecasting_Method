@@ -1,1 +1,1 @@
-"# Short_term_Philippine_Cities_Forecasting_Heat_Index_Using_Regression_as_a_Causal_Forecasting_Method" 
+# Short_term_Philippine_Cities_Forecasting_Heat_Index_Using_Regression_as_a_Causal_Forecasting_Method
