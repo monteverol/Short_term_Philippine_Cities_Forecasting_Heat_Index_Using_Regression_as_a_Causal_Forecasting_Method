@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Stardos+Stencil:wght@400;700&display=swap');
+
+:root {
+    --primary: #F2572B;
+    --secondary: #F9ECDE;
+    --tertiary: #2B0303;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+}
+
+/* INDEX.HTML */
+.intro {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.intro .header {
+    height: 10%;
+    width: 100%;
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.intro .header p {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--tertiary);
+}
+
+.intro .body {
+    height: 90%;
+    width: 100%;
+    position: relative;
+    background-color: var(--primary);
+}
+
+.intro .body .image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.intro .body .image .barcode {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.intro .body .image .title {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
+
+.intro .body .image .title p {
+    color: var(--tertiary);
+    font-family: 'Notable', sans-serif;
+    font-size: 9em;
+    line-height: 1em;
+}
+
+.intro .body .image .title p:nth-child(3) {
+    color: var(--secondary);
+}
+
+.intro .body .image .navigations {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro .body .image .navigations a {
+    font-size: 4em;
+    color: var(--secondary);
+    text-decoration: none;
+    text-align: right;
+    font-weight: bold;
+}
+
+.intro .body .image .navigations a:hover {
+    transition: 0.1s ease-in;
+    color: var(--tertiary);
+}
+
+/* SELECT_CITY.HTML */
+.select_city {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+}
+
+.select_city .info {
+    height: 100%;
+    width: 40%;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+}
+
+.select_city .info p:nth-child(1) {
+    font-family: 'Stardos Stencil', system-ui;
+    font-size: 10em;
+    font-weight: bold;
+    color: var(--tertiary);
+    margin-bottom: 0.25em;
+}
+
+.select_city .info p:nth-child(3) {
+    color: var(--secondary);
+    font-size: 4em;
+    margin-top: 0.5em;
+}
+
+.select_city .selection {
+    background-color: var(--secondary);
+    height: 100%;
+    width: 60%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select_city .selection .container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.select_city .selection .container p {
+    font-size: 3em;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--tertiary);
+    line-height: 2em;
+}
+
+.select_city .selection .container p:hover {
+    color: var(--primary)
+}
+
+/* PLOTTING.HTML */
+.plotting {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--primary);
+    padding: 5%;
+}
+
+.plotting .plots {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.plotting .plots .title {
+    width: 100%;
+    height: 15%;
+    background-color: #898989;
+    padding: 0 2em;
+    border-radius: 0.5em;
+}
+
+.plotting .plots .title p {
+    color: #F3F3F3;
+    font-size: 5em;
+    font-weight: bold;
+    font-family: 'Stardos Stencil', system-ui;
+}
+
+.plotting .plots .image {
+    height: 80%;
+    width: 100%;
+    background-color: #F3F3F3;
+    border-radius: 0.5em;
+}
+
+.plotting .plots .image img {
+    height: 100%;
+}
+
+.plotting .actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 35%;
+}
+
+.plotting .actions .codes {
+    height: 80%;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 0.5em;
+}
+
+.plotting .actions .button {
+    height: 15%;
+    width: 100%;
+    background-color: #8B3E28;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.5em;
+}
+
+.plotting .actions .button:hover {
+    transition: 0.1s ease-in-out;
+    background-color: #5d291b;
+}
+
+.plotting .actions .button p {
+    font-size: 5em;
+    font-family: 'Stardos Stencil', system-ui;
+    font-weight: bold;
+    color: #FFFFFF;
+}

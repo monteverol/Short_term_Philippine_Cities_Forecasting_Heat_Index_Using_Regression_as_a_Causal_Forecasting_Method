@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<main class="select_city">
+    <div class="info">
+        <p> Select City </p>
+        <hr color="#F9ECDE" size="8"/>
+        <p>The forecast will be applied only to these cities: </p>
+    </div>
+    <div class="selection">
+        <div class="container" id="city_container">
+
+        </div>
+    </div>
+</main>
+
+<script src="../static/JS/get_city_list.js"></script>
+
+{% endblock %}
