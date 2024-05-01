@@ -7,7 +7,9 @@
         <div class="title">
             <p>{{ city }}</p>
         </div>
-        <div class="image"></div>
+        <div class="image">
+            
+        </div>
     </div>
     <div class="actions">
         <div class="codes"></div>
@@ -24,6 +26,11 @@
         url.searchParams.set('city', city);
         window.location.replace(url.toString());
     });
+
+    var img_str = "{{ img_str }}"
+    const img = document.createElement("img")
+    img.src = img_str
+    document.querySelector(".image").appendChild(img)
 </script>
 
 {% endblock %}
