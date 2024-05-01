@@ -1,1 +1,1 @@
-# Short_term_Philippine_Cities_Forecasting_Heat_Index_Using_Regression_as_a_Causal_Forecasting_Method
+# Predicting Heat Index in Selected Cities in the Philippines from PAG-ASA’s Climate Heat Index Data: A 7-Day Causal Regression Model
