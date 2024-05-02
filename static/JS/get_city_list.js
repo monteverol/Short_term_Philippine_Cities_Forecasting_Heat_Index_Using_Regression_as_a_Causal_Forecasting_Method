@@ -14,18 +14,17 @@ fetch('city_list')
                 })
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data.message);
-                    console.log(data.plot);
+                    console.log(data.predictions);
 
                     // Create a new URL object for the plotting page
-                    const plottingUrl = new URL("http://127.0.0.1:5000/plotting");
+                    const dateUrl = new URL("http://127.0.0.1:5000/select_date");
 
                     // Set city and img_str as query parameters
-                    plottingUrl.searchParams.set('city', city);
-                    plottingUrl.searchParams.set('img_str', data.plot);
+                    dateUrl.searchParams.set('city', city);
+                    dateUrl.searchParams.set('predictions', data.predictions);
 
                     // Redirect to the plotting page
-                    window.location.href = plottingUrl.toString();
+                    window.location.href = dateUrl.toString();
                 })
                 .catch(error => {
                     console.error('Error:', error);
