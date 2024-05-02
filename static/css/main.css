@@ -163,10 +163,113 @@
     color: var(--primary)
 }
 
+.select_date {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+}
+
+.select_date .info {
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.select_date .info p:nth-child(1) {
+    font-family: 'Stardos Stencil', system-ui;
+    font-size: 10em;
+    font-weight: bold;
+    background-color: #F9ECDE;
+    color: var(--primary);
+    margin-bottom: 0.25em;
+    padding-top: 40px;
+    padding-left: 60px;
+}
+
+.select_date .info p:nth-child(3) {
+    color: var(--secondary);
+    font-size: 4em;
+    margin-top: 0.5em;
+}
+
+.select_date .info .datepicker{
+    display: flex;
+    flex-direction: row;
+    padding-left: 40px;
+}
+
+.select_date .info .datepicker .month{
+    width: 48%;
+}
+
+.select_date .info .datepicker .day{
+    width: 20%;
+}
+
+.select_date .info .datepicker .year{
+    width: 24%;
+}
+
+.select_date .info .datepicker p{
+    font-size: 4em;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 2em;
+    color: #FFFFFF;
+    background-color: var(--primary);
+}
+
+.select_date .info .datepicker select {
+    background-color: #F3F3F3;
+    margin-left: 1.2em;
+    width: 90%;
+    height: 60%;
+    font-size: 3em;
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+.select_date .info .datepicker #day{
+    width: 80%;
+}
+
+.select_date .info .datepicker #year{
+    width: 92%;
+}
+
+.select_date .info #selectDateNext {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 20%;
+    height: 10%;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.select_date .info #selectDateNext:hover {
+    background-color: #d6b5a2;
+}
+
+.select_date .info #selectDateNext p {
+    text-decoration: none;
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'Notable', sans-serif;
+    color: var(--tertiary);
+}
 
 /* PLOTTING.HTML */
-
-
 .plotting {
     height: 100vh;
     display: flex;
@@ -372,3 +475,6 @@
     font-size: 3em;
     color: #FFFFFF;
 }
+
+/* SELECT_DATE.HTML */
+
